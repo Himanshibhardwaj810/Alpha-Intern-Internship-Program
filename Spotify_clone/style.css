@@ -11,17 +11,22 @@ body{
     background-color: black;
     color:white;
 }
+
 .header{
     height:100vh;
     width:75px;
-   
+   /* background-color: aquamarine; */
     margin:15px;
     border-radius: 5px;
+    position: fixed;
+    z-index: 9;
+    
 }
 .navbar ul{
     list-style: none;
     background-color: rgb(40, 40, 40);
     border-radius: 10px;
+    
 }
 .nav-item {
     margin-left: 2px;
@@ -43,21 +48,25 @@ body{
 }
 .nav-link span {
    position: relative;
-   left:7px;
-   top:17px;
+   left:10px;
+   top:14px;
    padding: 3px;
    font-weight: 70;
    border-radius: 3px;
    opacity:0;
   
-  
    transform: translateY(-50%);
    transition: opacity 0.3s ease;
     
 }
+/* .nav-link .search{
+    top:87px;
+    left:60px;
+} */
 .nav-link:hover span{
     opacity: 1;
-    background-color:rgb(40, 40, 40); ;
+    background-color:rgb(40, 40, 40); 
+   
 }
 
 /* .nav-link:hover span {
@@ -118,7 +127,7 @@ body{
 }
 .nav-item2 #likedsongs {
     position: absolute;
-   left:13vh;
+   left:10vh;
    top:31vh;
    padding: 3px;
    font-weight: 70;
@@ -132,4 +141,128 @@ body{
 .nav-item2:hover #likedsongs{
     opacity: 1;
     background-color:rgb(40, 40, 40); ;
+}
+
+/* **********************************HOME******************************************************* */
+.Home .header2{
+    position: fixed;
+    width:92%;
+    height:10vh;
+    background-color: rgb(32, 18, 90);
+    display: flex;
+    top:15px;
+    left:15.5vh;
+    z-index: 7;
+    border-top-left-radius:10px ;
+    border-top-right-radius:10px ;
+    
+}
+.arrow-left , .arrow-right{
+    font-family: sans-serif;
+    font-size: 25px;
+    color: rgb(185, 185, 185);
+    background-color:rgb(15, 8, 44);
+    height:35px;
+    width:35px;
+    border-radius: 7000px;
+    margin-left: 25px;
+    margin-top:15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .arrow-right {
+    margin-left: 8px;
+  }
+  .header2 .inner{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* background-color: aqua; */
+    position: relative;
+    /* margin-left: 120vh; */
+    left: 105vh;
+    width:350px;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .header2 .icons{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: white;
+    background-color:rgb(15, 8, 44);
+    height:35px;
+    width:35px;
+    border-radius: 7000px;
+    /* margin-left: 25px;
+    margin-top:15px; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    
+  }
+  .inner .premium{
+    height:35px;
+    width:170px ;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-weight: 100; */
+    font-size: 17px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    transition: transform 0.3s ease;
+  }
+  .inner .premium:hover {
+    transform: scale(1.05); /* Increase the size by 20% on hover */
+    cursor: pointer; 
+  }
+ #email{
+    background-color: rgb(168, 89, 150);
+    
+  }
+  .icons span {
+    position: absolute;
+    left: 50%;
+    top: calc(100% + 7px);
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 3px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    background-color: rgb(40, 40, 40);
+    color: white;
+    white-space: nowrap;
+    border-radius: 5px;
+    
+  }
+  #email span{
+    left:5%;
+    top:100%;
+    transform: translateX(-50%);
+    margin-top: 5px;
+  }
+
+  .icons:hover span {
+    opacity: 1;
+    visibility: visible;
+  }
+  /* coverpage */
+  .Home .coverpage{
+    position: absolute;
+    width:92%;
+    height:100vh;
+    background-color:aqua;
+    display: flex;
+    top:15px;
+    left:15.5vh;
+    z-index: 5;
+    margin-top: 20px;
+    
+    
 }
