@@ -214,6 +214,7 @@ body{
     border-radius: 20px;
     background-color: aliceblue;
     transition: transform 0.3s ease;
+    border: none;
   }
   .inner .premium:hover {
     transform: scale(1.05); /* Increase the size by 20% on hover */
@@ -253,16 +254,80 @@ body{
     visibility: visible;
   }
   /* coverpage */
-  .Home .coverpage{
+  .Home .maindiv{
     position: absolute;
     width:92%;
     height:100vh;
-    background-color:aqua;
+    background-image: linear-gradient(to bottom,rgb(30, 17, 81),rgb(29, 18, 76),rgb(20, 18, 26),rgb(18, 18, 18));
     display: flex;
     top:15px;
     left:15.5vh;
     z-index: 5;
-    margin-top: 20px;
+    margin-top: 30px;
     
     
+}
+.maindiv .coverpage{
+    position: relative;
+    height:40vh;
+    width:95%;
+    background-image: linear-gradient(to right,black,rgb(25, 16, 61),rgb(28, 18, 66));
+    margin-top:47px;
+    margin-left:30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+.coverpage .coverimg{
+    position: absolute;
+    height:35vh;
+    width:20%;
+    left:17px;
+    
+}
+.coverpage .cover-text{
+    position: absolute;
+    height:27vh;
+    width:77%;
+    left:38vh;
+    top:16px;
+
+
+
+
+}
+.coverpage .buttons{
+    position:absolute;
+    height:50px;
+    width:30%;
+    top:30vh;
+    left: 38vh;
+
+}
+.buttons .play{
+    height:45px;
+    width:90px;
+    border-radius: 30px;
+    border: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    border-radius: 20px;
+    background-color: rgb(30, 215, 96);
+    color: black;
+    margin-left:12px;
+    transition: transform 0.3s ease;
+
+}
+.buttons .play:hover{
+        transform: scale(1.1); /* Increase the size by 20% on hover */
+        cursor: pointer; 
+      
+}
+.buttons #save{
+    background-color: rgb(6, 5, 10);
+    color: white;
+    margin-left: 8px;
+    border-color:white ;
+    border: 1px solid;
 }
