@@ -10,6 +10,7 @@ body{
     
     background-color: black;
     color:white;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header{
@@ -207,10 +208,10 @@ body{
   }
   .inner .premium{
     height:35px;
-    width:170px ;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    /* font-weight: 100; */
-    font-size: 17px;
+    width:170px;
+    /* font-weight: 750; */
+    font-size: 15px;
+    font-weight: bold;
     border-radius: 20px;
     background-color: aliceblue;
     transition: transform 0.3s ease;
@@ -258,7 +259,7 @@ body{
     position: absolute;
     width:92%;
     height:100vh;
-    background-image: linear-gradient(to bottom,rgb(30, 17, 81),rgb(29, 18, 76),rgb(20, 18, 26),rgb(18, 18, 18));
+    background-image: linear-gradient(to bottom,rgb(30, 17, 81),rgb(29, 18, 76),rgb(20, 18, 26),rgb(40,40,40));
     display: flex;
     top:15px;
     left:15.5vh;
@@ -330,4 +331,60 @@ body{
     margin-left: 8px;
     border-color:white ;
     border: 1px solid;
+}
+.Three-buttons{
+    position: absolute;
+    height:40px;
+    width:240px;
+
+    left:29px;
+    top:53vh;
+}
+.Three-buttons .podcast{
+    height:32px;
+    width:40px;
+    border-radius: 20px;
+    border:none;
+    font-size: 13px;
+    font-weight: 180;
+    font-weight: bold;
+    background-color: rgb(54, 54, 54);
+    color: aliceblue;
+    cursor: pointer;
+    
+   
+}
+.Three-buttons .podcast:hover{
+    background-color: white;
+    color: black;
+}
+.Three-buttons #Music{
+    width: 65px;
+    margin-left: 2px;
+}
+.Three-buttons #Podcast{
+    width:90px;
+    margin-left: 2px;
+}
+.albums{
+    position: absolute;
+    height: 65px;
+    width:115vh;
+    
+    top:63vh;
+    left:29px;
+    display: flex;
+    justify-content: space-between;
+}
+.albums .albums-card{
+    height:100%;
+    width:49%;
+    background-color: rgb(54, 54, 54);
+    display: flex;
+}
+.albums .album-text{
+    padding-top:25px;
+    padding-left:15px;
+    font-weight: bold;
+    
 }
