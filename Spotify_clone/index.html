@@ -161,8 +161,8 @@
                     </div>
                 </div>
             </div>
-             <!-- ***********************************ARTISTS*********************************** -->
-             <div class="artist-section">
+            <!-- ***********************************ARTISTS*********************************** -->
+            <div class="artist-section">
                 <h1>Artists</h1>
                 <div class="artist-div">
                     <div class="artist-cards">
@@ -227,7 +227,7 @@
                     </div>
                 </div>
             </div>
-            
+
 
             <!-- ***********************************RECENTLY PLAYED*********************************** -->
             <div class="recently-section">
@@ -277,12 +277,46 @@
                     </div>
                 </div>
             </div>
-            
-           
+
+
 
         </div>
     </section>
+    <!-- **************************************SONG PLAYER************************************** -->
+    <div class="audio-player">
+        <div class="song-info">
+            <img src="img/yoyo.png" alt="Song Cover" class="song-cover">
+            <div class="song-details">
+                <h3>Brown Rang </h3>
+                <p>Yo yo Honey Singh</p>
+            </div>
+        </div>
+        <div class="player-controls">
+            <button class="prev-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 5V19L4 12L11 5Z" fill="white" />
+                    <rect x="15" y="5" width="2" height="14" fill="white" />
+                </svg>
+            </button>
+            <button class="play-pause-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 5V19L19 12L8 5Z" fill="white" />
+                </svg>
+            </button>
+            <button class="next-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 5V19L20 12L13 5Z" fill="white" />
+                    <rect x="7" y="5" width="2" height="14" fill="white" />
+                </svg>
+            </button>
+        </div>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+        <div class="song-time">0:00</div>
+    </div>
 
+    <audio src="music/01   Yo Yo Honey Singh   Brown Rang.mp3" id="audio"></audio>
     <script src="script.js"></script>
 </body>
 
