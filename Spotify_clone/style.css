@@ -736,6 +736,8 @@ body {
     display: flex;
     flex-direction: column;
     margin-left: 90px;
+    /* background-color: aqua; */
+    width:200px;
   }
   .song-details h3{
     font-size: 14px;
@@ -758,6 +760,7 @@ body {
     position: absolute;
     left: 87vh;
     top:15px;
+    width:150px;
   }
   
   .player-controls button {
@@ -766,6 +769,7 @@ body {
     color: #fff;
     cursor: pointer;
     margin: 0 5px;
+
     
   }
   
@@ -777,7 +781,7 @@ body {
     margin: 0 10px;
     position: relative;
     margin-top: 20px;
-    margin-left: 15vh;
+    margin-left: 6vh;
   }
   
   .progress {
@@ -790,4 +794,22 @@ body {
     white-space: nowrap;
     margin-right: 150px;
     margin-top: 20px;
+    width:90px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+  .play-pause-button {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.play-pause-button svg {
+    width: 24px;
+    height: 24px;
+}
